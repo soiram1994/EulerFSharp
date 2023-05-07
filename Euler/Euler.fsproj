@@ -4,6 +4,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Ex5.fs" />
     <Compile Include="Ex4.fs" />
     <Compile Include="Ex3.fs" />
     <Compile Include="Ex2.fs" />
