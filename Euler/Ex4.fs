@@ -14,6 +14,6 @@ module Ex4 =
             lst |> List.map (fun lstEl -> combHelper lstEl (filterOut lstEl lst)) 
                 |> List.concat 
                 |> List.map (fun x -> x[0]*x[1]) 
-                |> List.where (fun x -> isPalindrome x)
+                |> List.where isPalindrome
                 |> List.sort
     List.ofSeq {999..-1..100} |> comb |> List.rev |> List.head |> printfn "%d"

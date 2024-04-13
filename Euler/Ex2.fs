@@ -16,6 +16,6 @@ module Ex2 =
         fibonacciHelper 1 2 0
 
     let result = fibonacciEvenSum 4000000
-    printfn "The sum of even-valued Fibonacci terms not exceeding 4 million is %d" result
+    printfn $"The sum of even-valued Fibonacci terms not exceeding 4 million is %d{result}"
 
 

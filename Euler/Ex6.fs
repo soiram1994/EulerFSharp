@@ -14,4 +14,4 @@ module Ex6 =
     let sumOfSquares = first100 |>  Seq.map (fun x -> x*x) |> Seq.sum |> float
     let squareOfSum = first100 |> Seq.sum 
     let result  = (float (squareOfSum*squareOfSum)) - sumOfSquares 
-    printfn "%A" result
+    printfn $"%A{result}"

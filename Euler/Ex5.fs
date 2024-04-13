@@ -11,5 +11,5 @@ module Ex5 =
             failwith "The provided range of numbers is not valid."
         seq {start .. ending} |> Seq.forall (fun x -> number % x = 0)
     let infiniteSeq start = Seq.initInfinite (fun i -> start+i)
-    infiniteSeq 2520 |> Seq.find (fun x -> isDivisibleFor 1 20 x) |> printfn "%d"
+    infiniteSeq 2520 |> Seq.find (isDivisibleFor 1 20) |> printfn "%d"
         
